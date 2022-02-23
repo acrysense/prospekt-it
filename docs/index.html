@@ -12,30 +12,67 @@
 <body>
     <!-- panel -->
     <div class="panel" id="panel">
-        <nav class="nav">
-            <ul class="nav__list">
-                <li class="nav__item nav__item--active">
-                    <a href="#" class="nav__link" data-title="HOMEPAGE">
-                        <span>HOMEPAGE</span>
-                    </a>
-                </li>
-                <li class="nav__item">
-                    <a href="#" class="nav__link" data-title="ABOUT">
-                        <span>ABOUT</span>
-                    </a>
-                </li>
-                <li class="nav__item">
-                    <a href="#" class="nav__link" data-title="WORKS">
-                        <span>WORKS</span>
-                    </a>
-                </li>
-                <li class="nav__item">
-                    <a href="#" class="nav__link" data-title="CONTACTS">
-                        <span>CONTACTS</span>
-                    </a>
-                </li>
-            </ul>
-        </nav>
+        <!--<div class="panel__top">
+            <a href="index.html" class="logotype">
+                <svg width="84" height="84" viewBox="0 0 84 84" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M58.5723 1H83.0017V22.1473" stroke="#2968DF" stroke-width="0.5"/>
+                    <path d="M1 61.4935L1 82.9993H25.0223" stroke="#2968DF" stroke-width="0.5"/>
+                    <path d="M42.5786 14.0007H27.9985L31.511 22.0006H42.5786C45.3784 22.0006 46.8983 23.2806 46.8983 27.2806V35.6805C46.8983 39.6805 45.3784 40.9605 42.5786 40.9605H38.419L42.5786 48.9604C51.3779 48.9604 55.6976 44.0804 55.6976 35.1205V27.8406C55.6976 18.8806 51.3779 14.0007 42.5786 14.0007Z" fill="#2968DF"/>
+                    <path d="M27.9985 70.0005H36.7978V62.0486L32.6243 55.8841L27.9985 48.9606V70.0005Z" fill="white"/>
+                </svg>
+            </a>
+            <button class="hamburger hamburger--active" aria-label="Закрыть">
+                <span class="hamburger__inner"></span>
+                <span class="hamburger__inner"></span>
+                <span class="hamburger__inner"></span>
+            </button>
+        </div>-->
+        <div class="panel__wrap">
+            <nav class="nav">
+                <ul class="nav__list">
+                    <li class="nav__item nav__item--active">
+                        <a href="#" class="nav__link" data-title="HOMEPAGE">
+                            <span>HOMEPAGE</span>
+                        </a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#" class="nav__link" data-title="COMING SOON">
+                            <span>COMING SOON</span>
+                        </a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#" class="nav__link" data-title="COMING SOON">
+                            <span>COMING SOON</span>
+                        </a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#" class="nav__link" data-title="COMING SOON">
+                            <span>COMING SOON</span>
+                        </a>
+                    </li>
+                    <li class="nav__item nav__item--mobile">
+                        <a href="#" class="nav__link" data-title="CONTACTS">
+                            <span>CONTACTS</span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+            <a href="#" class="panel__btn btn" data-text="Hire us">
+                <span>Hire us</span>
+            </a>
+        </div>
+        <div class="overlay">
+            <div class="container">
+                <a href="index.html" class="logotype overlay__logo">
+                    <svg width="84" height="84" viewBox="0 0 84 84" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M58.5723 1H83.0017V22.1473" stroke="#2968DF" stroke-width="0.5"/>
+                        <path d="M1 61.4935L1 82.9993H25.0223" stroke="#2968DF" stroke-width="0.5"/>
+                        <path d="M42.5786 14.0007H27.9985L31.511 22.0006H42.5786C45.3784 22.0006 46.8983 23.2806 46.8983 27.2806V35.6805C46.8983 39.6805 45.3784 40.9605 42.5786 40.9605H38.419L42.5786 48.9604C51.3779 48.9604 55.6976 44.0804 55.6976 35.1205V27.8406C55.6976 18.8806 51.3779 14.0007 42.5786 14.0007Z" fill="#2968DF"/>
+                        <path d="M27.9985 70.0005H36.7978V62.0486L32.6243 55.8841L27.9985 48.9606V70.0005Z" fill="white"/>
+                    </svg>
+                </a>
+            </div>
+        </div>
     </div>
     <!-- end of panel -->
     <!-- wrapper -->
@@ -44,7 +81,7 @@
         <header class="header" id="header">
             <div class="container">
                 <div class="header__wrapper">
-                    <a href="index.html" class="logotype">
+                    <a href="index.html" class="logotype header__logotype">
                         <svg width="84" height="84" viewBox="0 0 84 84" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M58.5723 1H83.0017V22.1473" stroke="#2968DF" stroke-width="0.5"/>
                             <path d="M1 61.4935L1 82.9993H25.0223" stroke="#2968DF" stroke-width="0.5"/>
@@ -85,12 +122,6 @@
                                 <div class="c-advantages main__advantages">
                                     <div class="c-advantages__item">
                                         <svg class="c-advantages__icon">
-                                            <use xlink:href="img/dist/sprite.svg#icon-advantages-production"></use>
-                                        </svg>
-                                        <h3 class="c-advantages__title">Production</h3>
-                                    </div>
-                                    <div class="c-advantages__item">
-                                        <svg class="c-advantages__icon">
                                             <use xlink:href="img/dist/sprite.svg#icon-advantages-professional"></use>
                                         </svg>
                                         <h3 class="c-advantages__title">Professional</h3>
@@ -100,6 +131,12 @@
                                             <use xlink:href="img/dist/sprite.svg#icon-advantages-progressive"></use>
                                         </svg>
                                         <h3 class="c-advantages__title">Progressive</h3>
+                                    </div>
+                                    <div class="c-advantages__item">
+                                        <svg class="c-advantages__icon">
+                                            <use xlink:href="img/dist/sprite.svg#icon-advantages-production"></use>
+                                        </svg>
+                                        <h3 class="c-advantages__title">Production</h3>
                                     </div>
                                 </div>
                             </div>
